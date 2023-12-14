@@ -1,1 +1,26 @@
+.body{
+    max-width: screen;
+}
 
+.main{
+    display: grid;
+    width: screen;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    /*margin-left: 20%;
+    margin-right: 20%;*/
+}
+.highlight{
+    grid-row: 2;
+    width: 40vw;
+    height: auto;
+}
+.recent{
+    grid-row: 2;
+    width: 50vw;
+    height: auto;
+}
+.image-r{
+    width: auto;
+    height: 50vh;
+}
