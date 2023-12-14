@@ -5,22 +5,28 @@
 .main{
     display: grid;
     width: screen;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2.5fr;
     row-gap: 10px;
     /*margin-left: 20%;
     margin-right: 20%;*/
 }
-.highlight{
-    grid-row: 2;
-    width: 40vw;
-    height: auto;
-}
-.recent{
+
+.recent, .highlight{
     grid-row: 2;
     width: 50vw;
     height: auto;
+    text-align: center;
 }
+
 .image-r{
     width: auto;
     height: 50vh;
+}
+
+
+.image-r img, .image-r img {
+    /* width:100% for anytime you want a child element to fill the whole parent div */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
