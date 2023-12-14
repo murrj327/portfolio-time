@@ -2,13 +2,23 @@
     max-width: screen;
 }
 
+#index-body {
+    /* empty css for max height */
+}
+
 .main{
     display: grid;
     width: screen;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2.5fr;
     row-gap: 10px;
     /*margin-left: 20%;
     margin-right: 20%;*/
+}
+
+.bio-section{
+    padding-top: 3rem;
+    text-align: right;
 }
 
 .recent, .highlight{
@@ -20,13 +30,13 @@
 
 .image-r{
     width: auto;
-    height: 50vh;
+    height: 100%;
 }
 
 
-.image-r img, .image-r img {
+.image-r img {
     /* width:100% for anytime you want a child element to fill the whole parent div */
-    width: 100%; 
     height: 100%;
+    width: 100%; 
     object-fit: cover;
 }
